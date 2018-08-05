@@ -47,3 +47,8 @@ bower.json
 # Ignore node_modules
 node_modules/
 
+# Ignore IDE
+.idea
+
+# Ignore MacOS files
+.DS_Store

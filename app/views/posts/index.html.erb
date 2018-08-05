@@ -1,0 +1,18 @@
+<h1>Index</h1>
+<% @posts.each do |post| %>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title"><%= post.title %></h2>
+      <div>
+        <%= post.content %>
+      </div>
+      <div class="tags">
+        <% post.tags.order(name: :ASC).each do |tag| %>
+          <a href="#" class="card-link">
+            <%= tag.name %>
+          </a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
